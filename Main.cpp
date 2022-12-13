@@ -23,7 +23,6 @@ void getSum(int array[], int secondArray[], int sum[]);
 
 int main()
 {
-	// TODO: Write code for the main function
 	// outputting what the user enters. the actual process of getting the number is through the getNum function
 	
 	// initialize three arrays for your function
@@ -84,8 +83,8 @@ void getSum(int array[], int secondArray[], int sum[])
 	for (int i = MAXSIZE - 1; i >= 0; i--)
 	{
 		s = array[i] + secondArray[i] + carry;		// what the sum would be
-		sum[i] = (s % 10);							// get the remainder
-		carry = s / 10;								// finding carry that can be used next
+		sum[i] = (s % 10);				// get the remainder
+		carry = s / 10;					// finding carry that can be used next
 
 	}
 
